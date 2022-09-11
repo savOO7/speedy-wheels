@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+	
+	
+	Body{
+		background-color: rgba(255,255,255,1.00);
+	}
+
+
+	#logo { 
+		height:130px;
+		width:250px;
+		position:absolute;
+		top:-150%;
+		left:0%;
+		
+	}
+
+	#text1 {
+		text-align:right;
+		text-shadow:3px 2px 10px white;
+		font-family: "Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif'";
+		font-size:70px;
+		Background: radial-gradient(rgba(100,0,255,.79),RED) fixed top;
+		width:100%;
+	}
+	
+	#text2{
+		text-align:right;
+		font-size:30px;
+		background: radial-gradient( rgba(0,20,76,1.00),rgba(0,175,235,1.00) );
+		text-shadow: 1px 1px 10px white;		
+		font-family: "Allura";
+		position:absolute;
+		top:14%;
+		width:100%
+	}
+
+
+	ul.menu-bar {
+		list-style-type:none;
+		background-color:#303;
+		width:100%;
+		padding:0;
+		margin:0;
+		overflow:hidden;
+		Position:fixed;
+		top:0px;	
+		font-size:20px;
+	}
+
+	li.menu {float:left;}
+
+
+	li.menu a {
+    	display: block;
+   		color: White;
+    	text-align: center;
+    	padding: 14px 16px;
+    	text-decoration: none;
+	}
+
+	li.menu a:hover {background-color: #111;}
+	
+	
+
+	#Copyright {
+		background-color:#303;
+		width:100%;
+		position:fixed;
+		bottom:0;
+		color:white;
+		text-align:center;
+		font-size:20px;
+	}
+	
+	
+	
+	a:hover{color:rgba(255,63,0,1.00) }
+	a{color:rgba(0,0,0,1.00)}
+	a:visited {color:rgba(255,71,0,1.00)}
+	a:active {color:rgba(89,0,255,1.00)}
+	
+	
+	#Aventador{
+		box-shadow: 5px 0px 20px 0px black,0px 5px 20px 0px black;
+		top:30%;
+		left:4%;
+		width:70%;
+		background-color:rgba(255,255,255,1);
+	}
+	
+	
+	
+	img.car {
+		width:340px;
+		height:225px;
+		float: right;
+	}
+	
+	table {
+		font-size:20px;
+	}
+
+		
+	#tf{
+		border-style:groove;
+		border-color:rgba(0,0,0,0.40);
+	}
+	
+	.tdf{
+		border-style:double;
+		border-color:rgba(0,0,0,0.40);
+		transition:0.2s;
+		border-width:0.5px;
+	}
+	.tdf:hover{
+		border-color:rgba(255,39,0,1.00);
+	}
+	
+	td {padding:4px;}
+
+	#TS{
+		border-style:double;
+		border-color:rgba(0,0,0,0.40);
+		border-width:0.5px,0.5px;
+		transition:0.2s;
+	}
+
+	#TS:hover{
+		border-color:rgba(255,39,0,1.00);
+	}
+	
+	#recommends{
+		font-family:"allura";
+	}
+	
+	.recommends {
+		
+	}
+	.recommends-li{
+		border-style:double;
+		border-color:rgba(0,0,0,0.75);
+		border-width:thick;
+		transition:0.4s;
+	}
+	
+	.recommends-li:hover{
+		border-color:rgba(255,40,0,1);
+		box-shadow: 0px 0px 10px 2px black;		
+	}
+	
+	
+</style>
+
+</head>
+
+
+<body>
+
+
+<div id="noscroll">
+		
+	<h1 id="text1"/> SPEEDY WHEELS
+	<h4 id="text2"/> Sports &amp; Exotic
+	<img src="Content\logo.png" id="logo">
+	
+</div>
+
+
+<center>
+
+<br><br><br><br>
+
+
+<div id="Aventador">
+	
+	<a href="Content\Lamborgini Huracan.jpg"><img class="car" src="Content\Lamborgini Huracan.jpg"></a>
+	
+	<br>
+
+	<div>
+	
+	<h1/>Lamborghini Huracan
+	<h4/>Varient - <i><b>Performante</b></i>
+	<h3/>Rs. 3.97 Crore Ex-Showroom Prize
+	<br><br><br><br>
+	
+	</div>
+
+</div>
+
+<br><br><br>
+<h2>Specifications</h2>
+
+<table id="tf">
+	
+<tr>
+       
+	<td class="tdf">
+       	
+       	<table>
+       	
+       		<tr>
+       		<th class="td" colspan="2" >ECONOMY</th>
+       		</tr>
+       		
+       		<tr>
+       			<td class="td">Mileage</td>
+        		<td class="td">11.24 KMPL</td>
+			</tr>
+			
+			<tr>
+    		    <td class="td">Service Cost</td>
+    		    <td class="td">-</td>
+			</tr>  
+			
+			<tr>
+				<td class="td">Fuel Type</td>
+				<td class="td">Petrol</td>
+			</tr>
+    		    
+			<tr>
+    		        
+				<td class="td">Fuel Tank</td>
+  				<td class="td">90 Litres</td>
+   			</tr>
+   			
+   		</table>
+   		 
+	</td>
+   		    
+   	<td class="tdf">
+  	  
+  	 	<table>
+   	      		    
+			<tr>        
+				<th colspan="2" class="td">COMFORT</th>      
+			</tr>
+    		    
+			<tr>              
+				<td class="td">Cruise Control</td>            
+				<td class="td">Yes</td>        
+			</tr>
+    		    
+			<tr>            
+				<td class="td">Sun Proof</td>            
+				<td class="td">No</td>        
+			</tr>
+    		    
+			<tr>            
+				<td class="td">Seating Capacity</td>            
+				<td class="td">2</td>       
+			</tr>
+    		    
+			<tr>           
+				<td class="td">Boot Space</td>            
+				<td class="td">480 Litres</td>        
+			</tr>
+   	
+		</table>
+	</td>
+
+	<td class="tdf">
+
+    	<table>
+    		    
+			<tr>           
+				<th colspan="2" class="td">SAFETY</th>        
+			</tr>
+    		    
+			<tr>            
+				<td class="td">Parking Sensor</td>            
+				<td class="td">Yes</td>        
+			</tr>
+   		
+    		<tr>           
+				<td class="td">Air Bags</td>            
+				<td class="td">Yes</td>        
+			</tr>
+			<tr>
+				<td>-</td>
+				<td>-</td>
+				
+			</tr>		
+			<tr>
+				<td>-</td>
+				<td>-</td>
+			</tr>
+		</table>
+	
+	</td>
+   		    
+   	<td class="tdf">
+   		<table>
+    		    
+			<tr>            
+				<th colspan="2" class="td">EMI</th>        
+			</tr>
+    		    
+			<tr>           
+				<td class="td">Duration</td>            
+				<td class="td">5 Years</td>        
+			</tr>
+    		<tr>            
+				<td class="td">EMI</td>            
+				<td class="td">Rs. 767977</td>        
+			</tr>
+			<tr>
+				<td>-</td>
+				<td>-</td>	
+			</tr>
+			<tr>
+				<td>-</td>
+    		    <td>-</td>
+			</tr>
+		
+		</table>
+	</td>
+	
+</tr>
+
+</table>
+
+<br><br><br>
+
+<table id="TS">
+    		    
+	<tr>
+   	    <th colspan="2" class="td">PERFORMANCE</th>
+  	</tr>
+   	    
+   	<tr>
+   		<td class="td">Top Speed</td>
+   		<td class="td">325 KMPH</td>
+  	</tr> 
+   	        
+	<tr>
+   	    <td class="td">Acceleration (0-100KMPH)</td>   	    
+   	    <td class="td">2.9 Seconds</td>
+   	</tr>       
+   	    
+	<tr>
+   	    <td class="td">Engine Displacement(cc)</td>
+   	    <td class="td">5204</td>
+   	</tr>
+  	
+   	<tr>
+   		<td class="td">Maximum Power</td>
+   		<td class="td">640bhp@8000prm</td>
+   	</tr>
+
+   	<tr>
+   	   	<td class="td">Maximum Torque</td>
+   	   	<td class="td">600nm@6400rpm</td>
+  	</tr> 
+   	
+   	<tr>
+   		<td class="td">Engine Description</td>
+   		<td class="td">5.2l 572.6bhp 40 v v type pertol engine</td>
+  	</tr>  
+  	    
+	<tr>
+   		<td class="td">Turning Radius</td>
+   		<td class="td">6.15 meters</td>
+  	</tr>
+  	
+   	<tr>
+   		<td class="td">No. of Cylinders</td>
+   		<td class="td">10</td>
+  	</tr>
+	
+   	<tr>                           
+		<td class="td">Drive Type</td>            
+		<td class="td">RWD</td>        
+	</tr>
+   	    
+	<tr>            
+		<td class="td">Turbo Charger</td>            
+		<td class="td">No</td>        
+	</tr>
+   	   
+   	<tr>        
+   	    <td class="td">Super Charger</td>
+   	    <td class="td">No</td>
+   	</tr> 
+   	   
+   	<tr>
+   		<td class="td">Waves Per Cylinder </td>
+   		<td class="td">4</td>
+  	</tr>  
+   	
+   	<tr>
+   		<td class="td">Compression Ratio</td>
+   		<td class="td">16.1:1</td>
+  	</tr>  
+   	
+   	<tr>
+   		<td class="td">Fuel Supply System</td>
+   		<td class="td">-</td>
+  	</tr>  
+    
+    <tr>
+   		<td class="td">Gear Box</td>
+   		<td class="td">7 Speed</td>
+  	</tr>  
+    
+    <tr>
+   		<td class="td">Steering Gear Type</td>
+   		<td class="td">Rack &ampp; Pinion</td>
+  	</tr>  
+  
+
+</table>
+<br><br><br><br><br>
+
+<table id="recommends">
+
+<p style="font-family: allura;color:rgba(73,0,255,1.00);font-size:30px;">Recommended For You</p>
+
+<tr>
+	<td class="recommends">
+		<div class="recommends-li">
+			<a href="bmw i8.html">
+				<img src="Content\bmw i8.jpg" style="width: 200px;height:130px;">
+				<div style="text-align: center">BMW i8</div>
+			</a>	
+		</div>
+	</td>
+		
+	<td class="recommends">
+		<div class="recommends-li">
+			<a href="Bugatti Veyron.html">
+				<img src="Content\Bugatti Veyron.jpg" style="width: 200px;height:130px;">
+				<div style="text-align: center">Bugatti Veyron</div>
+			</a>
+		</div>
+	</td>
+		
+	<td class="recommends">
+		<div class="recommends-li">
+			<a href="Jaguar XJ.html">
+				<img src="Content\Jaguar XJ.jpg" style="width: 200px;height:130px;">
+				<div style="text-align: center">Jaguar XJ</div>
+			</a>
+		</div>
+	</td>
+		
+	<td class="recommends">
+		<div class="recommends-li">
+			<a href="Mercedes-Benz AMG GT.html">
+				<img src="Content\Mercedes-Benz amg gt.jpg" style="width: 200px;height:130px;">
+				<div style="text-align: center">Mercedes AMG GT R</div>
+			</a>
+		</div>
+	</td>
+</tr>		
+</table>  
+<br><br><br>
+
+
+
+</center>
+
+
+<ul class="menu-bar">
+	<li class="menu"><a href="Home Page.html">Home</a></li>
+	<li class="menu"><a href="about.html">About</a></li>
+	<li class="menu"><a href="contact us.html">Contact Us</a></li>
+</ul>
+
+
+
+
+<div id="Copyright">Copyright.Saksham All Rights Reserved</div>
+
+<br><br><br>
+
+</body></html>

@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+	
+	
+	Body{
+		background-color: rgba(0,0,0,0.90);
+	}
+
+
+	#logo { 
+		Position:fixed;
+		Width:250px;
+		top:10%;
+	}
+
+	#text1 {
+		text-align:right;
+		text-shadow:3px 2px 10px white;
+		font-family: "Baskerville, 'Palatino Linotype', Palatino, 'Century Schoolbook L', 'Times New Roman', 'serif'";
+		font-size:70px;
+		Background: radial-gradient(rgba(111,0,249,0.58),RED) top fixed;
+		width:100%;
+		Position:fixed;
+		top:0%;
+		
+	}
+	#text2{
+		text-align:right;
+		font-size:30px;
+		background: radial-gradient( rgba(0,20,76,1.00),rgba(0,175,235,1.00) );
+		text-shadow: 1px 1px 10px white;
+		width:100%;
+		Position:fixed;
+		top:13%;
+		
+		font-family: "Allura";
+		
+	}
+	#text3{
+		font-size:40px;
+		font-family: "allura";
+		font-weight: lighter;
+		color: lawngreen;
+		
+	}
+	#text3:hover{
+		text-shadow:1px 1px 10px white;
+	}
+	
+
+	ul {
+		list-style-type:none;
+		background-color:#303;
+		width:100%;
+		padding:0;
+		margin:0;
+		overflow:hidden;
+		Position:fixed;
+		top:0px;	
+		font-size:20px;
+	}
+
+	li {float:left;}
+
+
+	li a {
+    	display: block;
+   		color: White;
+    	text-align: center;
+    	padding: 14px 16px;
+    	text-decoration: none;
+	}
+
+	li a:hover {background-color: #111;}
+
+	li.active {background:black;}
+
+
+	#Copyright {
+		background-color:#303;
+		width:100%;
+		position:fixed;
+		bottom:0;
+		color:white;
+		text-align:center;
+		font-size:20px;
+	}
+
+	#side {
+		position:fixed;
+		right:1%;
+		bottom:9%;
+		background:green;
+		color:white;
+		padding:8px;
+	}
+
+
+
+
+
+	#sidebutton a {
+		position: absolute;
+		position: fixed;
+   		left: -200px;
+ 		transition: 0.3s;
+  	 	padding: 15px;
+   		width: 250px;
+   		text-decoration: none;
+   		font-size: 30px;
+   		color: white;
+   		border-radius: 0 5px 5px 0;
+		top:400px;
+		background:green;
+	}
+
+	#sidebutton:hover a {left: 0}
+	
+
+
+
+	img.Option {
+		Height:50;
+		Width:100px;
+		Transition:0.4s;
+	}
+
+	.Model {	
+		background:blue;
+		Width:255px;
+		Height:150px;
+		Opacity:0.65;				
+		Transition:0.2s;
+	}
+
+	.Model:hover {
+		Opacity:1;						
+		Width:350px;
+		Height:215px;
+	}
+				
+
+	.Special{
+		Position:relative;
+		Background-color:Lightgreen;
+		Border-style: outset;
+		Width:9%;
+		Transition:0.4s;				
+		box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	}
+
+	.Special:hover{
+		Border-style: inset;
+		border-width: 6px 5px 6px 5px;
+		Background:Lightblue;
+		Box-shadow:0;
+	}
+
+	.Model .Model-Name {
+		Position:absolute;
+		text-align:center;
+		background: rgba(0, 0, 0, 0.5);
+    	color: #f1f1f1;
+		padding: 20px;
+	}
+					
+
+	
+	
+	
+	
+	.dropdown {
+		Position:relative;
+		width: 8%;
+		display:inline;
+		}
+	
+	.dropdown-content{
+		Position:absolute;
+		display:none;
+		transition: 3s;
+		}
+	
+	.dropdown:hover .dropdown-content {
+		Position:relative;
+		Display:inline;
+		padding: 15px;
+		width:10px;
+		}
+
+
+	.dropdown:hover .Special {
+		Border-style: inset;
+		border-width: 6px 5px 6px 5px;
+		Background:Lightblue;
+	}
+	
+	.Left-Model {
+		box-sizing: border-box;
+		box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
+		padding-bottom: 8px;
+		background: rgba(0,0,0,0.75);
+	}
+	
+	.Right-Model {
+		box-sizing: border-box;
+		box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
+		padding-bottom: 8px;
+		background: rgba(0,0,0,0.75);
+	}
+	
+	.Middle-Model {
+		box-sizing: border-box;
+		box-shadow: 0 10px 14px 0 rgba(0, 0, 0, 0.2), 0 10px 24px 0 rgba(0, 0, 0, 0.19);
+		padding-bottom: 8px;
+		background: rgba(0,0,0,0.75);
+	}
+	
+	
+	
+	
+	.car-name{
+		text-align:center;
+		font-size:25px;
+		font-family: "Allura Regular";
+		font-weight:400;
+	}
+	
+	
+	a.links:hover{color:Yellow;}
+	a.links{color:rgba(129,255,0,1.00)}
+	a.links:visited {color:rgba(255,71,0,1.00)}
+	a.links:active {color:rgba(89,0,255,1.00)}
+		
+
+			
+
+</style>
+
+</head>
+
+
+<body>
+
+
+
+
+
+<div class="sidenav" id="sidebutton">
+
+	<a href="Lamborgini Aventador.html" id="myfavbutton">My Favourite</a>
+
+</div>
+
+
+
+<center>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p id="text3">Shift-up and Accelerate</p>
+<br>
+
+<div>
+
+<div class="dropdown"><span><button Class="Special"><img src="Content\Aston Martin.jpg" class="Option"></button></span>
+	
+	
+	<div class="dropdown-content">
+		<table>
+			<tr>
+				<td>
+					<div Class="Left-Model">
+						<a href="Aston Martin DB11.html" class="links">
+							<img class="Model" src="Content\Aston Martin DB11.jpg">
+							<div class="Card">
+								<p Class="car-name"/>Aston Martin DB11
+							</div>
+ 						</a>
+ 					</div>
+				</td>
+				<td>
+					<div Class="Right-Model">
+						<a href="Aston Martin Vanquish V12.html" class="links">
+							<img class="Model" src="Content\Aston Martin Vanquish V12.jpg">
+							<div>
+								<p Class="car-name"/>Aston Martin V12
+							</div>	
+						</a>				
+					</div>
+				</td>
+			</tr>
+		</table>	
+	</div>
+	
+</div><br><br><br><br><br><br>
+
+<div class="dropdown"><span><button Class="Special"><img src="Content\Audi.jpg" class="Option"></button></span>
+	
+	<div class="dropdown-content">
+		<table>
+			<tr>
+				<td>
+					<div Class="Left-Model">
+						<a href="audi A8.html" class="links">
+							<img class="Model" src="Content\Audi a8.jpg">					
+							<div>
+								<p Class="car-name"/>Audi A8
+							</div>
+						</a>
+					</div>
+				</td>
+				<td>
+					<div Class="Middle-Model">
+						<a href="Audi R8.html" class="links">
+							<img class="Model" src="Content\Audi R8.jpg">					
+							<div>
+								<p Class="car-name"/>Audi R8
+							</div>
+						</a>
+					</div>
+				</td>
+				<td>
+					<div Class="Right-Model">
+						<a href="Audi Rs4.html" class="links">
+							<img class="Model" src="Content\audi RS7.jpg">
+							<div>				
+								<p Class="car-name"/>Audi RS7
+							</div>
+						</a>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+</div><br><br><br><br><br><br>
+
+
+
+<div class="dropdown"><span><button Class="Special"><img src="Content\BMW.jpg" class="Option"></button></span>
+	
+	<div class="dropdown-content">
+		<table>
+			<tr>
+				<td>
+					<div Class="Left-Model">
+						<a href="BMW 7 Series.html" class="links">
+							<img class="Model" src="Content\bmw 7 series.jpg">
+							<div>
+								<p Class="car-name"/>BMW 7 Series
+							</div>
+						</a>
+					</div>
+				</td>
+				<td>
+					<div Class="Middle-Model">
+						<a href="DMW i8.html" class="links">
+							<img class="Model" src="Content\bmw i8.jpg">
+							<div>
+								<p Class="car-name"/>BMW i8
+							</div>
+						</a>
+					</div>
+				</td>
+				<td>
+					<div Class="Right-Model">
+						<a href="BMW M Series.html" class="links">
+							<img class="Model" src="Content\BMW M Serie.jpeg">
+							<div>
+								<p Class="car-name"/>BMW M Series
+							</div>
+						</a>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+</div><br><br><br><br><br><br>
+
+
+<div class="dropdown"><span><button Class="Special"><img src="Content\Bugatti.jpg" class="Option"></button></span>
+
+	<div class="dropdown-content">
+		<table>
+			<tr>
+				<td>
+					<div Class="Middle-Model">
+						<a href="Bugatti Veyron.html" class="links">
+							<img class="Model" src="Content\Bugatti Veyron.jpg">
+							<div>
+								<p Class="car-name"/>Bugatti Veyron
+							</div>
+						</a>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+</div><br><br><br><br><br><br>
+
+
+
+
+<div class="dropdown"><span><button Class="Special"><img src="Content\Ferrari.png" class="Option"></button></span>
+
+	<div class="dropdown-content">
+		<table>
+			<tr>
+				<td>
+					<div Class="Middle-Model">
+						<a href="Ferrari 458.html" class="links">
+							<img class="Model" src="Content\Ferrari 458 Speciale.jpg">
+							<div>
+								<p Class="car-name"/>Ferrari 458 Speciale
+							</div>
+						</a>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+</div><br><br><br><br><br><br>
+
+
+
+<div class="dropdown"><span><button Class="Special"><img src="Content\Jaguar.jpg" class="Option"></button></span>
+	
+	<div class="dropdown-content">
+		<table>
+			<tr>
+				<td>
+					<div Class="Left-Model">
+						<a href="Jaguar F Type.html" class="links">
+							<img class="Model" src="Content\Jaguar F Type.jpg">
+							<div>
+								<p Class="car-name"/>Jaguar F Type
+							</div>
+						</a>
+					</div>
+				</td>
+				<td>
+					<div Class="Right-Model">
+						<a href="Jaguar XJ.html" class="links">
+							<img class="Model" src="Content\Jaguar XJ.jpg">
+							<div>
+								<p Class="car-name"/>Jaguar XJ
+							</div>
+						</a>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+</div><br><br><br><br><br><br>
+
+
+<div class="dropdown"><span><button Class="Special"><img src="Content\Lamborgini.jpg" class="Option"></button></span>
+	
+	<div class="dropdown-content">
+		<table>
+			<tr>
+				<td>
+					<div Class="Left-Model">
+						<a href="Lamborgini Aventador.html" class="links">
+							<img class="Model" src="Content\Lamborgini Aventador.jpg">
+							<div>
+								<p  Class="car-name"/>Lamborgini Aventador
+							</div>
+						</a>
+					</div>
+				</td>
+				<td>
+				 	<div Class="Right-Model">
+			 			<a href="Lamborgini Huracan.html" class="links">
+				 			<img class="Model" src="Content\Lamborgini Huracan.jpg">
+				 			<div>
+				 				<p Class="car-name"/>Lamborgnin Huracan
+				 			</div>
+				 		</a>
+				 	</div>
+				 </td>
+			</tr>
+		</table>
+	</div>
+
+</div><br><br><br><br><br><br>
+
+
+
+
+
+
+<div class= "dropdown"><span><button class="Special"><img src="Content\Mercedes-benz.jpg" class="Option"></button></span>
+
+	<div class="dropdown-content">
+		<table>
+			<tr>
+				<td>
+					<div Class="Left-Model">
+						<a href="Mercedes-benz amg gt.html" class="links">
+							<img class="Model" src="Content\Mercedes-benz amg gt.jpg">
+							<div>
+								<p Class="car-name"/>Mercedes AMG GT R
+							</div>
+						</a>
+					</div>
+				</td>
+				<td>
+					<div Class="Right-Model">
+						<a href="Mercedes-benz s-class.html" class="links">
+							<img class="Model" src="Content\Mercedes-benz s-class.jpg">
+							<div>
+								<p Class="car-name"/>Mercedes S-Class
+							</div>
+						</a>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+	
+</div><br><br><br><br><br><br>
+
+
+
+
+
+
+<div class="dropdown"><span><button Class="Special"><img src="Content\Rolls Royce.jpg" class="Option"></button></span>
+
+	<div class="dropdown-content">
+		<table>
+			<tr>	
+				<td>
+					<div Class="Middle-Model">
+						<a href="Rolls Royce Phantom.html" class="links">
+							<img class="Model" src="Content\Rolls Royce Phantom.jpg">
+							<div>
+								<p Class="car-name"/>Rolls Royce Phantom
+							</div>
+						</a>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+</div>
+</div><br><br><br><br><br><br>
+
+
+
+
+</center>
+
+
+
+<div id="noscroll">
+	<h1 id="text1"> SPEEDY WHEELS</h1><br>
+	<h4 id="text2">Sports &amp; Exotic</h4>
+</div>
+
+
+
+
+
+
+<ul>
+	<li class="active"><a href="Home Page.html">Home</a></li>
+	<li><a href="About.html">About</a></li>
+	<li class="menu"><a href="contact us.html">Contact Us</a></li>
+</ul>
+
+<img src="Content\logo.png" id="logo">
+
+<div id="side">
+
+	T<br>h<br>a<br>n<br>k<br>s<br><br>F<br>o<br>r<br><br> V<br>i<br>s<br>i<br>t<br>i<br>n<br>g
+
+</div>
+
+<div id="Copyright">Copyright Saksham Verma. All Rights Reserved.</div>
+
+
+
+
+</body></html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
